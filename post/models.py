@@ -42,5 +42,6 @@ class Post(BaseModel):
     status = models.CharField(max_length=15, choices=POST_STATUS)
     read_min = models.IntegerField(default=0)
     views_count = models.PositiveIntegerField(default=0)
+    for_you = models.BooleanField(default=False)
 
     is_popular = models.BooleanField(default=False)
